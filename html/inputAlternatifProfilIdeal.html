@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPK Rekomendasi Posisi Pekerjaan</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/logo-smkn-6.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body">
+                <!-- <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
+                  <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
+                </a> -->
+                <h2 class="text-center mb-5">Input Profil Ideal Pekerjaan</h2>
+                <p>*Pilih Posisi Pekerjaan Kemudian Klik Lanjut, Setelah Itu Pilih Nilai Profil Ideal Kemudian Klik Simpan</p>
+                <form id="formInputAlternatifProfiIdeal">
+                  <div class="mb-5" id="containerInputPosisiKerja">
+                    <label for="exampleInputtext1" class="form-label">Nama Posisi Pekerjaan</label>
+                    <!-- <div class="dropdownPosisiKerja"> -->
+                      <!-- <select name="" id="inputPosisiPekerjaan" class="form-select" required >
+                      <option value="">=== PILIH POSISI KERJA ===</option>
+                      <option value="1">Programmer</option>
+                      <option value="2">IT SUPPORT</option>
+                      <option value="3">KEWIRAUSAHAAN</option>
+                    </select> -->
+                    <!-- </div> -->
+                  </div>
+                  <div class="mb-5 mt-5" id="containerInputNilaiKriteria">
+                    <!-- <div>
+                            <label class="form-label">${kriteria.id_kriteria} - ${kriteria.keterangan}</label>
+                            <select class="form-select" required>
+                                <option value="">=== PILIH SKOR ===</option>
+                                <option value="1">1 - Tidak Wajib</option>
+                                <option value="2">2 - Rendah</option>
+                                <option value="3">3 - Sedang</option>
+                                <option value="4">4 - Wajib</option>
+                                <option value="5">5 - Sangat Wajib</option</select>
+                        </div> -->
+                  </div>
+                  <input type="button" value="Lanjut" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2 btn-lanjut">
+                  <input type="submit" value="Simpan" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2 btn-simpan">
+                </form>
+                <input type="submit" value="Kembali" class="btn btn-danger w-100 py-8 fs-4 mb-4 rounded-2"
+                  id="btnKembali">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../assets/js/logika-form-insert-update/logikaFormProfilIdeal.js"></script>
+
+  <script>
+    const btnKembali = document.getElementById('btnKembali');
+    btnKembali.addEventListener('click', () => {
+      window.location.href = './AlternatifProfilIdeal.html';
+    });
+  </script>
+</body>
+
+</html>
